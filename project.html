@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- The title will be set by JavaScript -->
+    <title>Project | Said Behzadmanesh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="project-nav">
+      <a href="index.html#projects" class="back-link">← Back to Portfolio</a>
+    </nav>
+
+    <main class="project-detail-wrapper">
+      <!-- This header will be filled by JS -->
+      <header id="project-header" class="project-header"></header>
+
+      <!-- The slideshow container, will be filled by JS -->
+      <section id="project-gallery">
+        <div id="slideshow-container" class="slideshow-container">
+          <!-- Slides will be generated here -->
+          <!-- Navigation buttons -->
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+      </section>
+
+      <!-- This description section will be filled by JS -->
+      <section id="project-description">
+        <div id="description-content" class="description-content"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Said Behzadmanesh. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Load the data first, then the renderer script -->
+    <script src="projects.js"></script>
+    <script src="renderer.js"></script>
+  </body>
+</html>
